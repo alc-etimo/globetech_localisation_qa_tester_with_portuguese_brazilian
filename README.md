@@ -11,12 +11,12 @@ Online portfolio developed for the **Localisation QA Tester with Portuguese Braz
 - **Focus:** Software documentation, help content, print items, hardware labels, terminology management
 
 ## 📂 Portfolio structure
-├── index.html # Main entry point
-├── imgs/
-│ ├── layout/ # Layout background images
-│ ├── logos/ # Client and personal logos
-│ ├── hero/ # Hero slideshow background images
-│ └── collabs/ # Collaborations section background images
+├── index.html # Main entry point<br>
+├── imgs/<br>
+│ ├── layout/ # Layout background images<br>
+│ ├── logos/ # Client and personal logos<br>
+│ ├── hero/ # Hero slideshow background images<br>
+│ └── collabs/ # Collaborations section background images<br>
 
 
 ## 🧩 Sections
