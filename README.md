@@ -1,0 +1,2 @@
+# globetech_localisation_qa_tester_with_portuguese_brazilian
+Ariane Lesnyak globetech_localisation_qa_tester_with_portuguese_brazilian
