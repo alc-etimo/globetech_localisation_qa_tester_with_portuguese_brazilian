@@ -950,16 +950,84 @@ html { overflow-y: scroll; }
         </div>
 
         <p style="margin-bottom:20px;font-size:0.87rem;color:var(--muted);">Sample test coverage matrix for documentation assets across platforms:</p>
+<!-- Interactive Coverage Matrix -->
         <div class="matrix-wrap">
           <table class="matrix-table">
-            <thead><tr><th>Test Area</th><th>macOS</th><th>iOS</th><th>Android</th><th>Print / Docs</th><th>Hardware UI</th><th>Issue Type</th></tr></thead>
+            <thead>
+              <tr>
+                <th>Test Area</th>
+                <th>macOS</th>
+                <th>iOS</th>
+                <th>Android</th>
+                <th>Print / Docs</th>
+                <th>Hardware UI</th>
+                <th>Issue Type</th>
+              </tr>
+            </thead>
             <tbody>
-              <tr><td>UI String Length / Truncation</td><td class="badge-bug">BUG</td><td class="badge-bug">BUG</td><td class="badge-pass">PASS</td><td class="badge-na">N/A</td><td class="badge-bug">BUG</td><td>Functional + Linguistic</td></tr>
-              <tr><td>Text Expansion (PT-BR +30%)</td><td class="badge-bug">BUG</td><td class="badge-bug">BUG</td><td class="badge-bug">BUG</td><td class="badge-pass">PASS</td><td class="badge-na">N/A</td><td>Layout / Functional</td></tr>
-              <tr><td>Help Content Consistency</td><td class="badge-pass">PASS</td><td class="badge-pass">PASS</td><td class="badge-pass">PASS</td><td class="badge-bug">BUG</td><td class="badge-na">N/A</td><td>Linguistic</td></tr>
-              <tr><td>Print Material Formatting</td><td class="badge-na">N/A</td><td class="badge-na">N/A</td><td class="badge-na">N/A</td><td class="badge-bug">BUG</td><td class="badge-na">N/A</td><td>Layout</td></tr>
-              <tr><td>Hardware Label Alignment</td><td class="badge-na">N/A</td><td class="badge-na">N/A</td><td class="badge-na">N/A</td><td class="badge-na">N/A</td><td class="badge-bug">BUG</td><td>Functional + Layout</td></tr>
-              <tr><td>Terminology Consistency (UI ↔ Docs)</td><td class="badge-pass">PASS</td><td class="badge-pass">PASS</td><td class="badge-pass">PASS</td><td class="badge-bug">BUG</td><td class="badge-pass">PASS</td><td>Linguistic</td></tr>
+              <tr>
+                <td>UI String Length / Truncation</td>
+                <td><span class="badge-bug">BUG</span></td>
+                <td><span class="badge-bug">BUG</span></td>
+                <td><span class="badge-pass">PASS</span></td>
+                <td><span class="badge-na">N/A</span></td>
+                <td><span class="badge-bug">BUG</span></td>
+                <td>Functional + Linguistic</td>
+              </tr>
+              <tr>
+                <td>Text Expansion (PT-BR is ~30% longer)</td>
+                <td><span class="badge-bug">BUG</span></td>
+                <td><span class="badge-bug">BUG</span></td>
+                <td><span class="badge-bug">BUG</span></td>
+                <td><span class="badge-pass">PASS</span></td>
+                <td><span class="badge-na">N/A</span></td>
+                <td>Layout / Functional</td>
+              </tr>
+              <tr>
+                <td>Cultural Adaptation (date, currency)</td>
+                <td><span class="badge-pass">PASS</span></td>
+                <td><span class="badge-bug">BUG</span></td>
+                <td><span class="badge-pass">PASS</span></td>
+                <td><span class="badge-bug">BUG</span></td>
+                <td><span class="badge-na">N/A</span></td>
+                <td>Linguistic</td>
+              </tr>
+              <tr>
+                <td>Help Content Consistency</td>
+                <td><span class="badge-pass">PASS</span></td>
+                <td><span class="badge-pass">PASS</span></td>
+                <td><span class="badge-pass">PASS</span></td>
+                <td><span class="badge-bug">BUG</span></td>
+                <td><span class="badge-na">N/A</span></td>
+                <td>Linguistic</td>
+              </tr>
+              <tr>
+                <td>Special Characters / Encoding</td>
+                <td><span class="badge-pass">PASS</span></td>
+                <td><span class="badge-bug">BUG</span></td>
+                <td><span class="badge-pass">PASS</span></td>
+                <td><span class="badge-pass">PASS</span></td>
+                <td><span class="badge-pass">PASS</span></td>
+                <td>Functional</td>
+              </tr>
+              <tr>
+                <td>Hardware Label Alignment</td>
+                <td><span class="badge-na">N/A</span></td>
+                <td><span class="badge-na">N/A</span></td>
+                <td><span class="badge-na">N/A</span></td>
+                <td><span class="badge-na">N/A</span></td>
+                <td><span class="badge-bug">BUG</span></td>
+                <td>Functional + Layout</td>
+              </tr>
+              <tr>
+                <td>Terminology Consistency</td>
+                <td><span class="badge-pass">PASS</span></td>
+                <td><span class="badge-pass">PASS</span></td>
+                <td><span class="badge-pass">PASS</span></td>
+                <td><span class="badge-bug">BUG</span></td>
+                <td><span class="badge-pass">PASS</span></td>
+                <td>Linguistic</td>
+              </tr>
             </tbody>
           </table>
         </div>
