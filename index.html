@@ -859,12 +859,14 @@ html { overflow-y: scroll; }
             <p>Built a centralised terminology management system from a corpus of 2M+ monthly interactions. Applied structured QA processes: style guides, glossaries, QA checklists, and periodic feedback loops with engineering teams to prevent terminology drift between documentation and UI.</p>
           </div>
         </div>
+         <center></center>
         <div class="term-vis" style="display: flex; align-items: center; gap: 30px; background: #eef2f7; padding: 28px 32px; margin-bottom: 28px; flex-wrap: wrap; border-radius: 12px;">
           <div style="text-align:center"><div class="term-circle" style="width:100px; height:100px; background:#8a9aaa; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-direction:column; font-weight:800; color:white; font-size:1.6rem;">700<span style="font-size:0.7rem; margin-top:4px;">terms</span></div><div style="font-size:0.78rem; margin-top:8px;">Initial vocabulary</div></div>
           <div style="font-size:2rem; color:#2da4db;">→</div>
-          <div style="text-align:center"><div class="term-circle" style="width:140px; height:140px; background:#003C78; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-direction:column; font-weight:800; color:white; font-size:2.2rem;">2,700+<span style="font-size:0.7rem; margin-top:4px;">validated terms</span></div><div style="font-size:0.78rem; margin-top:8px;">Final controlled vocabulary</div></div>
+          <div style="text-align:center"><div class="term-circle" style="width:140px; height:140px; background:#003C78; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-direction:column; font-weight:800; color:white; font-size:2.2rem;">2,700+<span style="font-size:0.7rem; margin-top:4px;">validated terms</span></div><div style="font-size:0.78rem; margin-top:8px;">as of December/2025</div></div>
           <div style="flex:1"><h5 style="font-size:0.88rem; font-weight:700; color:#003C78; margin-bottom:12px;">What the expansion enabled:</h5><ul style="list-style:none"><li style="margin-bottom:6px; display:flex; gap:8px;">✓ Global terminology consistency across 30,000+ users</li><li style="margin-bottom:6px; display:flex; gap:8px;">✓ 60% reduction in cross-department inconsistency</li><li style="margin-bottom:6px; display:flex; gap:8px;">✓ Documentation fully synchronised with software UI</li><li style="margin-bottom:6px; display:flex; gap:8px;">✓ Style guides & glossaries adopted by 15+ team members</li></ul></div>
         </div>
+      </center>
         <div class="metrics-wrap">
           <div class="metric-row"><div class="metric-head"><span>Terminology Inconsistency Reduction</span><span>60%</span></div><div class="bar-track"><div class="bar-fill" data-width="60"></div></div></div>
           <div class="metric-row"><div class="metric-head"><span>Documentation-UI Synchronisation</span><span>85%</span></div><div class="bar-track"><div class="bar-fill" data-width="85"></div></div></div>
@@ -962,10 +964,10 @@ html { overflow-y: scroll; }
       <p>EU citizenship in final stage (Spanish passport). Based in São Paulo, BR — ready to align with Ireland timezone (10am-6pm IST). Accommodation secured in Europe for easy transition.</p>
     </div>
     <ul class="relo-checklist">
-      <li><i class="fas fa-check-circle relo-check"></i><div><strong>Remote work from anywhere in Europe — fully available</strong></div></li>
-      <li><i class="fas fa-check-circle relo-check"></i><div><strong>Working hours: 10am - 6pm Ireland time — fully aligned</strong></div></li>
-      <li><i class="fas fa-check-circle relo-check"></i><div><strong>EU Citizenship in final stages — no visa sponsorship required</strong></div></li>
-      <li><i class="fas fa-check-circle relo-check"></i><div><strong>6-month contract with possible extension — fully committed</strong></div></li>
+      <li><i class="fas fa-check-circle relo-check"></i><div><strong>Remote work from anywhere in Europe</strong></div></li>
+      <li><i class="fas fa-check-circle relo-check"></i><div><strong>Working hours: 10am - 6pm Ireland time</strong></div></li>
+      <li><i class="fas fa-check-circle relo-check"></i><div><strong>EU Citizenship in final stages</strong></div></li>
+      <li><i class="fas fa-check-circle relo-check"></i><div><strong>6-month contract with possible extension</strong></div></li>
     </ul>
   </div>
 </section>
@@ -1037,7 +1039,7 @@ const captions = [
     "Keeping documentation in sync with software UI through terminology governance",
     "Manual localisation testing for documentation, print items & hardware labels",
     "Process improvement: from generic feedback to structured documentation QA",
-    "Remote work across Europe · Ireland timezone · EU citizenship final stage"
+    "Remote work across Europe · Ireland timezone"
 ];
 function showHeroSlide(index) { heroSlides.forEach((s, i) => s.classList.toggle('active', i === index)); const captionEl = document.querySelector('#heroCaption p'); if (captionEl && captions[index]) captionEl.innerText = captions[index]; heroIdx = index; }
 function nextHeroSlide() { showHeroSlide((heroIdx + 1) % heroSlides.length); }
