@@ -427,6 +427,30 @@ html { overflow-y: scroll; }
 .badge-bug  { background: #FED7D7; color: #c53030; padding: 2px 8px; border-radius: 20px; font-weight: 600; font-size: 0.72rem; }
 .badge-na   { background: var(--rule); color: var(--muted); padding: 2px 8px; border-radius: 20px; font-weight: 600; font-size: 0.72rem; }
 
+   /* ── CASE 4: Terminology Expansion ── */
+.term-vis {
+  display: flex; align-items: center; gap: 30px;
+  background: var(--off); padding: 28px 32px; margin-bottom: 28px; overflow: hidden;
+}
+.term-before, .term-after {
+  text-align: center; flex: 1;
+}
+.term-circle {
+  border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  flex-direction: column; font-family: var(--head); font-weight: 800;
+  color: white; margin: 0 auto 12px;
+}
+.tc-before { width: 100px; height: 100px; background: var(--muted); font-size: 1.6rem; }
+.tc-after  { width: 160px; height: 160px; background: var(--navy); font-size: 2.2rem; }
+.term-circle span { font-size: 0.7rem; font-weight: 600; color: rgba(255,255,255,0.75); margin-top: 2px; }
+.term-arrow { font-size: 2rem; color: var(--blue); flex-shrink: 0; }
+.term-impact { flex: 1; }
+.term-impact h5 { font-size: 0.88rem; font-weight: 700; color: var(--navy); margin-bottom: 12px; }
+.term-impact ul { list-style: none; }
+.term-impact ul li { font-size: 0.82rem; color: var(--muted); margin-bottom: 6px; display: flex; align-items: flex-start; gap: 8px; }
+.term-impact ul li::before { content: '✓'; color: var(--green); font-weight: 700; flex-shrink: 0; }
+
 /* --- SKILLS SECTION (updated for documentation focus) --- */
 .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .skill-card {
@@ -858,15 +882,36 @@ html { overflow-y: scroll; }
             <h4>✅ Approach</h4>
             <p>Built a centralised terminology management system from a corpus of 2M+ monthly interactions. Applied structured QA processes: style guides, glossaries, QA checklists, and periodic feedback loops with engineering teams to prevent terminology drift between documentation and UI.</p>
           </div>
-        <center>
+        
         </div>         
-        <div class="term-vis" style="display: flex; align-items: center; gap: 30px; background: #eef2f7; padding: 28px 32px; margin-bottom: 28px; flex-wrap: wrap; border-radius: 12px; justify-content:center;">
-          <div style="text-align:center"><div class="term-circle" style="width:100px; height:100px; background:#8a9aaa; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-direction:column; font-weight:800; color:white; font-size:1.6rem;">700<span style="font-size:0.7rem; margin-top:4px;">terms</span></div><div style="font-size:0.78rem; margin-top:8px;">Initial vocabulary</div></div>
-          <div style="font-size:2rem; color:#2da4db;">→</div>
-          <div style="text-align:center"><div class="term-circle" style="width:140px; height:140px; background:#003C78; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-direction:column; font-weight:800; color:white; font-size:2.2rem;">2,700+<span style="font-size:0.7rem; margin-top:4px;">validated terms</span></div><div style="font-size:0.78rem; margin-top:8px;">as of December/2025</div></div>
-          <div style="flex:1"><h5 style="font-size:0.88rem; font-weight:700; color:#003C78; margin-bottom:12px;">What the expansion enabled:</h5><ul style="list-style:none"><li style="margin-bottom:6px; display:flex; gap:8px;">✓ Global terminology consistency across 30,000+ users</li><li style="margin-bottom:6px; display:flex; gap:8px;">✓ 60% reduction in cross-department inconsistency</li><li style="margin-bottom:6px; display:flex; gap:8px;">✓ Documentation fully synchronised with software UI</li><li style="margin-bottom:6px; display:flex; gap:8px;">✓ Style guides & glossaries adopted by 15+ team members</li></ul></div>
+         <div class="term-vis">
+          <div class="term-before">
+            <div class="term-circle tc-before">
+              700
+              <span>terms</span>
+            </div>
+            <div style="font-size:0.78rem;color:var(--muted);font-weight:600;">Initial vocabulary</div>
+          </div>
+          <div class="term-arrow"><i class="fas fa-arrow-right"></i></div>
+          <div class="term-after">
+            <div class="term-circle tc-after">
+              2,700+
+              <span>validated terms</span>
+            </div>
+            <div style="font-size:0.78rem;color:var(--muted);font-weight:600;">Controlled vocabulary as in Dec/2025</div>
+          </div>
+          <div class="term-impact">
+            <h5>What the expansion enabled:</h5>
+            <ul>
+              <li>Global terminology consistency across 30,000+ users</li>
+              <li>60% reduction in cross-department inconsistency</li>
+              <li>Style guides & glossaries adopted by 15+ team members</li>
+              <li>QA dashboards tracking recurring issues in real time</li>
+              <li>85% improvement in overall delivery consistency</li>
+            </ul>
+          </div>
         </div>
-      </center>
+      
         <div class="metrics-wrap">
           <div class="metric-row"><div class="metric-head"><span>Terminology Inconsistency Reduction</span><span>60%</span></div><div class="bar-track"><div class="bar-fill" data-width="60"></div></div></div>
           <div class="metric-row"><div class="metric-head"><span>Documentation-UI Synchronisation</span><span>85%</span></div><div class="bar-track"><div class="bar-fill" data-width="85"></div></div></div>
